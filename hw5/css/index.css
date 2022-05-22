@@ -1,0 +1,29 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+
+#menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 24px;
+    padding: 5px 2px;
+    background-color: rgb(187, 187, 187);
+    line-height: 20px;
+    font-size: 1vw;
+}
+#menu *{
+    margin: 0 5px;
+}
+
+#chart{
+    width: 100%;
+    height: calc(100% - 80px);
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>GAMES102 几何建模与处理基础</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/echarts.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <text>R键清除曲线</text>
+        <input type="radio" name="level-type" onchange="modeChange('Chaikin')" style="margin-left: 10px;" checked>Chaikin细分
+        <input type="radio" name="level-type" onchange="modeChange('AvgThreePowerBSpline')" style="margin-left: 10px;">均匀三次B样条
+        <input type="radio" name="level-type" onchange="modeChange('4Points')" style="margin-left: 10px;">4点插值细分
+        <input type="range" min="0" max="10" value="3" oninput="depthChange(this.value)" style="margin-left: 10px;">
+        <text id="depthText">递归次数：3次</text>
+    </div>
+    <div id="chart"></div>
+</body>
+</html>
